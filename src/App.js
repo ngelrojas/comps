@@ -1,22 +1,27 @@
+import {HiBadgeCheck} from "react-icons/hi";
+
 import Button from "./Button";
 
 const App = () => {
     return (
         <div>
             <div>
-                <Button >click here</Button>
+                <HiBadgeCheck />
+                <Button success rounded>click here</Button>
             </div>
 
             <div>
-                <Button >click here1 </Button>
+                <Button secondary rounded>click here1 </Button>
             </div>
 
             <div>
-                <Button >click here2</Button>
+                <Button warning rounded>click here2</Button>
             </div>
-
             <div>
-                <Button >click here3</Button>
+                <Button danger rounded>click here2</Button>
+            </div>
+            <div>
+                <Button primary rounded>click here3</Button>
             </div>
 
         </div>
