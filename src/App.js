@@ -1,29 +1,26 @@
-import {HiBadgeCheck} from "react-icons/hi";
-
-import Button from "./Button";
+import Accordion from "./components/Accordion";
 
 const App = () => {
+    const items = [
+        {
+            id: "asdf",
+            title: 'What is React?',
+            content: 'React is a front end javascript framework'
+        },
+        {
+            id: "iuyi",
+            title: 'can I sue React?',
+            content: 'React is a front end javascript framework'
+        },
+        {
+            id: "jklj",
+            title: 'can I use css?',
+            content: 'React is a front end javascript framework'
+        }
+    ]
     return (
         <div>
-            <div>
-                <HiBadgeCheck />
-                <Button success rounded>click here</Button>
-            </div>
-
-            <div>
-                <Button secondary rounded>click here1 </Button>
-            </div>
-
-            <div>
-                <Button warning rounded>click here2</Button>
-            </div>
-            <div>
-                <Button danger rounded>click here2</Button>
-            </div>
-            <div>
-                <Button primary rounded>click here3</Button>
-            </div>
-
+            <Accordion items={items} />
         </div>
     );
 }
