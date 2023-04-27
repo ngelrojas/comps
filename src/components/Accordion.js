@@ -52,3 +52,11 @@ const Accordion = ({ items }) => {
 }
 
 export default Accordion;
+
+// scanning ip aroud from my current ip
+// import nmap
+// scanner = nmap.PortScanner()
+// ip = input("inserte")
+// print("scanning from you ip", ip)
+// scanner.scan(ip)
+// print(scanner.all_hosts())
