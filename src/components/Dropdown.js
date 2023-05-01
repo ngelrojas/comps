@@ -15,7 +15,7 @@ export default function Dropdown({options, value, onChange}){
         onChange(option);
     }
 
-    const renderOptions = options.map((option) => {
+    const renderOptions = options?.map((option) => {
         return (
             <div onClick={() => handleOptionClick(option)} key={option.value} className="hover:bg-sky-100 rounded cursor-pointer p-1">
                 {option.label}
